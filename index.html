@@ -74,7 +74,7 @@
   
   <div class="cover-wrapper">
     
-      <cover class='cover  half'>
+      <cover class='cover  full'>
         <div class='cover-body'>
   <div class='a'>
     
@@ -158,6 +158,7 @@
   </div>
 </div>
 
+        <div class="scroll-down"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </cover>
     
     <div id="loading-bar-wrapper">
@@ -448,8 +449,8 @@
         
           
   <h2 class="title">
-    <a href="/2020/05/26/4.%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%BA%E4%BA%BA%E5%BC%80%E6%BA%90%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%BF%9B%E9%98%B6/">
-      4.谷粒商城学习笔记-人人开源后台管理系统进阶
+    <a href="/2020/05/26/hexo-build/">
+      hexo-build
     </a>
   </h2>
 
@@ -507,9 +508,28 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       
-        <p>日志配置</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#配置日志打印级别</span></span><br><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">com.atguigu.gulimall:</span> <span class="string">debug</span></span><br></pre></td></tr></table></figure>
-
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>先错略写下，后面再完善</p>
+<p>现在疫情期间，公司效益也不行，前段时间裁了一大批人，我们剩下的几个人也没有什么需求，主要是维护，我也深感危机，也在刷刷面试题，准备看看新机会，今天无意间看到一个招聘需求：==有一定的文档撰写能力，熟练绘制UML图，善于总结，有技术博客者优先；==我忽然意识到，工作这么多年了，自己连个个人博客网站都没有，深感凄凉，于是在网上找了下，很多博主都推荐用 Hexo + GitHub 可以免费搭建个人博客网站，看了下别人搭建的，还不错。</p>
+<ol>
+<li><p>第一步把淘宝镜像相关配置的内容放进来</p>
+</li>
+<li><p>根据<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官网</a>进行搭建 </p>
+</li>
+<li><p>部署到 git上 </p>
+</li>
+<li><p>清理，生产，部署命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>记得把 CNAME 和 readme.md等资源文件放在source文件夹，Hexo在执行命令时是不会删除掉<code>source</code>目录下的文件的文件</p>
+</li>
+</ol>
+<p>模板网站：<a href="https://volantis.js.org/v2/getting-started/" target="_blank" rel="noopener">https://volantis.js.org/v2/getting-started/</a></p>
+<p><a href="https://blog.csdn.net/weixin_42039699/article/details/101111394" target="_blank" rel="noopener">hexo -d后github上出现README.html问题解决</a>,或者 “_myfiles/<em>*/</em>“</p>
+<p>一定要在根目录创建 CNAME 文件来绑定你的私有域名，如果直接在github上面创建，会导致发布被删掉</p>
+<p>给博客添加雷达云和日历：<a href="https://blog.csdn.net/u013854486/article/details/104777219" target="_blank" rel="noopener">https://blog.csdn.net/u013854486/article/details/104777219</a></p>
+<p>其他创意小插件：<a href="https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/" target="_blank" rel="noopener">https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/</a></p>
+<p>七牛图床设置，可以写一篇博客</p>
+<p>未完待续…</p>
 
       
     </div>
